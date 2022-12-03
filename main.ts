@@ -13,8 +13,25 @@ const DEFAULT_SETTINGS: MyPluginSettings = {
 export default class MyPlugin extends Plugin {
 	settings: MyPluginSettings;
 
+	convert(str: string): string {
+		let lines: string[] = str.split(/\r?\n/);
+		lines = lines.filter(line => line.trim() !== '');
+		lines = lines.map(line => { return line.replace(/-   /g, '- '); })
+		console.log("map")
+		console.log(lines)
+		return lines.join('\n');
+	}
+
 	async onload() {
 		await this.loadSettings();
+
+		this.addCommand({
+			id: 'convert-bike-to-obsidian',
+			name: 'Convert bike outlines to obsidian format',
+			editorCallback: (editor: Editor, view: MarkdownView) => {
+				editor.replaceSelection(this.convert(editor.getSelection()));
+			}
+		});
 
 		// This creates an icon in the left ribbon.
 		const ribbonIconEl = this.addRibbonIcon('dice', 'Sample Plugin', (evt: MouseEvent) => {
