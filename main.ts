@@ -21,7 +21,13 @@ export default class MyPlugin extends Plugin {
 			id: 'convert-bike-to-obsidian',
 			name: 'Convert bike outlines to obsidian format',
 			editorCallback: (editor: Editor, view: MarkdownView) => {
-				editor.replaceSelection(this.convert(editor.getSelection()));
+				const selection: string = editor.getSelection();
+				if (selection.length) {
+					editor.replaceSelection(this.convert(selection));
+				}
+				else {
+					editor.setValue(this.convert(editor.getValue()));
+				}
 			}
 		});
 	}
