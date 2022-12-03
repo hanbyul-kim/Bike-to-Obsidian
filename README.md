@@ -14,7 +14,7 @@ This plugin
 Please enjoy Bike and Obsidian both!
 
 ## Installation
-Clone this repository in your plugin folder. (hint: /path/to/your/vault/.obsidian/plugins)
+Clone this repository in your plugin folder. (hint: `/path/to/your/vault/.obsidian/plugins`)
 ## Usage
 Just open command pallette (cmd + P) and run `Bike-to-Obsidian: Convert bike outlines to obsidian format`.
 If you don't select lines, the entire lines in your active document will be converted.
