@@ -3,7 +3,7 @@
 This is a simple plugin that formats Bike style outlines into Obsidian style.
 
 [Bike](https://www.hogbaysoftware.com/bike/) is a great MacOS application which you can outline thoughts.
-You may want to use it Obsidian, too!
+You may want to use it with Obsidian, too!
 However, if you copy and paste your outlines from Bike into Obsidian, they need to be reformatted to Obsidian style.
 This plugin will do the job for you!
 
