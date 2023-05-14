@@ -14,7 +14,9 @@ This plugin
 Please enjoy Bike and Obsidian both!
 
 ## Installation
-Clone this repository in your plugin folder. (hint: `/path/to/your/vault/.obsidian/plugins`)
+You can install this plugin with the BRAT plugin ([guide](https://github.com/TfTHacker/obsidian42-brat#Quick-Guide-for-using-BRAT)).
+Input `https://github.com/hanbyul-kim/Bike-to-Obsidian` to BRAT.
+
 ## Usage
 Just open command pallette (cmd + P) and run `Bike-to-Obsidian: Convert bike outlines to obsidian format`.
 If you don't select lines, the entire lines in your active document will be converted.
