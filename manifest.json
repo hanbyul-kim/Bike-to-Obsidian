@@ -5,6 +5,6 @@
 	"minAppVersion": "0.15.0",
 	"description": "This is a simple plugin which converts outlines from Bike to Obsidian.",
 	"author": "Hanbyul Kim",
-	"authorUrl": "https://obsidian.md",
+	"authorUrl": "https://github.com/hanbyul-kim/Bike-to-Obsidian",
 	"isDesktopOnly": false
 }
