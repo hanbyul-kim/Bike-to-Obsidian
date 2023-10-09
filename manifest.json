@@ -1,7 +1,7 @@
 {
 	"id": "Bike-to-Obsidian",
 	"name": "Bike-to-Obsidian",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
 	"description": "This is a simple plugin which converts outlines from Bike to Obsidian.",
 	"author": "Hanbyul Kim",
