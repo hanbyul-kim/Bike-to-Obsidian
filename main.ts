@@ -12,7 +12,7 @@ export default class MyPlugin extends Plugin {
 
 	convert(str: string): string {
 		let lines: string[] = str.split(/\r?\n/);
-		lines = lines.filter(line => line.trim() !== '').map(line => { return line.replace(/- {3}/g, '- '); })
+		lines = lines.filter(line => line !== '').map(line => { return line.replace(/- {3}/g, '- '); })
 		return lines.join('\n');
 	}
 
